@@ -1,29 +1,26 @@
 :root {
-    --main-color: rgb(131, 170, 128);
+    --main-color: rgb(82, 82, 82);
+    --sec-color: rgb(0, 0, 0);
+    --ter-color: rgb(233, 233, 233);
 }
 
 body {
 
     font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
 
     position:relative;
 
     margin: 0;
     padding: 0;
 
+    width: 100vw;
+    height: 100vh;
+
     background-color: white;
 
-}
+    overflow: hidden;
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-    display: none;
-}
-  
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
 #main-wave {
@@ -43,7 +40,7 @@ body {
 .wave {
 
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     border-radius: 99999px;
     transition: 1s ease-in-out;
 
@@ -67,43 +64,209 @@ body {
 
 }
 
-#drop-animation {
+.wave-step3 {
 
-    overflow: hidden;
-
-    position: relative;
-    width: 100vw;
-    height: 200vh;
+    top: calc(50vh - 110vw);
+    left: calc(20vw - 110vw);
+    width: 220vw;
+    height: 220vw;
 
 }
 
-#page-container {
+#photo-space-wave {
+    background: var(--ter-color);
+}
 
+#photo-main-wave > img {
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-45%, -50%) scale(.8);
+
+
+}
+
+.photo-wave-step1 {
+
+    top: 50vh;
+    left: 70vw;
+    width: 0vw;
+    height: 0vw;
+
+}
+
+.photo-wave-step2 {
+
+    top: calc(50vh - 15vw);
+    left: calc(70vw - 15vw);
+    width: 30vw;
+    height: 30vw;
+
+}
+
+#main-page {
     position:absolute;
     top:0;
     left:0;
     width: 100vw;
-
-
-    background-color: var(--main-color);
-
-    height: 9999px;
-
-    opacity: 0;
-
+    height: 100vh;
+    background-color: white;
 }
 
-#main-wave > div {
-
-    font-weight: bold;
+#presentation {
 
     position:absolute;
     top: 50%;
     left: 50%;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.presentation-hidden {
+    transform: translate(-50%, 50%);
+    opacity: 0;
+}
+
+.presentation-showed {
     transform: translate(-50%, -50%);
+    opacity: 100%;
+}
+
+#about {
+
+    width:40vw;
+    position:fixed;
+    top: 50vh;
+    left: 5vw;
+    transition: 1.2s ease-in-out;
+    font-size: large;
+    color: var(--ter-color);
+    text-align: justify;
+    
+}
+
+.about-hidden {
+    transform: translate(0, -150%);
+    opacity: 0;
+}
+
+.about-showed {
+    transform: translate(0, -50%);
+    opacity: 100%;
+}
+
+#text {
     font-size: xx-large;
     color: white;
-
     white-space: nowrap;
+    font-weight: bold;
+}
+
+#buttons {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.button {
+
+    cursor: pointer;
+    padding: 10px;
+    margin: 20px;
+    font-size: large;
+    background-color: white;
+    border-radius: 5px;
+    color: var(--main-color);
+    transition: 0.2s ease-in-out background-color;
+
+}
+
+.button:hover {
+
+    background-color: var(--sec-color);
+    color:white;
+
+}
+
+#navigation {
+
+    position:absolute;
+    left:75%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 1.5s ease-in-out;
+
+}
+
+.nav-button {
+
+    display: flex;
+    justify-content: left;
+    font-size: x-large;
+    margin-bottom: 40px;
+
+}
+
+.nav-text:hover {
+
+    background-color: var(--sec-color);
+
+}
+
+.nav-text {
+    margin-left: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--main-color);
+    color:white;
+    border-radius: 5px;
+    padding-left:15px;
+    padding-right:15px;
+    cursor:pointer;
+    transition: .5s ease-in-out background-color;
+}
+
+.nav-arrow {
+
+    font-size: 30px;
+    color: var(--main-color);
+    transition: .7s ease-in-out transform;
+    transform-origin: 40% 46%;
+    transform: rotate(-90deg);
+
+}
+
+.rotate-nav-arrow {
+
+    transform: rotate(360deg);
+
+}
+
+@keyframes coucou-animation {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(30deg)}
+}
+
+.coucou {
+    cursor: default;
+    display:inline-block;
+    transform: rotate(0deg);
+    transform-origin: 80% 80%;
+    animation: coucou-animation .8s infinite ease-in-out alternate;
+    animation-play-state: paused;
+}
+
+.coucou:hover {
+    animation-play-state: running;
+}
+
+strong {
+
+    color: var(--sec-color);
+    font-weight: bold;
 
 }
