@@ -6,12 +6,38 @@
 		<title>Mathieu Casubolo</title>
 		<link rel="icon" href="./favicon.png">
 		<link href="./style.css?v=1" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<script type="module" src="./dist/main-script.js?v=1"></script>
 	</head>
 	<body>
 		
 		<div id="main-page">
+			<div id="contact-container" class="contact-hidden">
+				<div id="contact-title">
+					<h1>Contact me</h1>
+				</div>
+				<div id="contact-email">
+					<a href="mailto:mathieu.casubolo@hotmail.com">mathieu.casubolo@hotmail.com</a>
+				</div>
+				<div id="contact-icons">
+					<div class="fa fa-linkedin" onclick="window.open('https://www.linkedin.com/in/mathieucasubolo/')"></div>
+					<div class="fa fa-github" onclick="window.open('https://github.com/Mathiouza')"></div>
+					<div class="fa fa-instagram" onclick="window.open('https://www.instagram.com/mathiouza/')"></div>
+					<div class="fa fa-deviantart" onclick="window.open('https://www.deviantart.com/mathiouza')"></div>
+					<div class="fa fa-facebook" onclick="window.open('https://www.facebook.com/mathiouza.mat.5')"></div>
+					<div class="fa fa-youtube-play" onclick="window.open('https://www.youtube.com/user/MonsieurMathiouza')"></div>
+					<div class="fa fa-twitter" onclick="window.open('https://twitter.com/Mathiouza')"></div>
+					<div class="fa fa-twitch" onclick="window.open('https://www.twitch.tv/mathiouza')"></div>
+				</div>
+				<div id="more-links">
+					<a href="https://sunlifecomic.com" target="_blank">My webcomic</a>
+					<a href="https://kiup.itch.io" target="_blank">My games</a>
+				</div>
+				<div id="contact-button" class="button">
+					My resume
+				</div>
+			</div>
 			<div id="main-navigation" class="navigation">
 				<div class="nav-button">
 					<div class="nav-arrow">
@@ -33,7 +59,7 @@
 					<div class="nav-arrow">
 						►
 					</div>
-					<div class="nav-text">
+					<div class="nav-text" id="main-projects-button">
 						My projects
 					</div>
 				</div>
@@ -41,13 +67,180 @@
 					<div class="nav-arrow">
 						►
 					</div>
-					<div class="nav-text">
+					<div class="nav-text" id="main-contact-button">
 						Contact me
 					</div>
 				</div>
 			</div>
 
-			<div id="sec-wave" class="wave wave-step1"></div>
+			<div id="sec-wave" class="wave wave-step1">
+				<div id="project-title" class="project-hidden">
+					<h1>My projects</h1>
+				</div>
+				<div id="project-container">
+					<div class="project-column">
+						<div class="project-column-title project-hidden">
+							<h1>Films and books</h1>
+						</div>
+						<div class="project-card project-hidden" onclick="window.open('https://sunlifecomic.com')">
+							<div class="project-icon">
+								<img src="project-icons/charlie.png">
+							</div>
+							<div class="project-description">
+								<h1>SunLife, the webcomic</h1>
+								<p>
+									SunLife is my first webcomic. I started this project back in January 2020.
+									I really love creating stories that can inspire people, making them feel something.
+									I still have a lot to learn in that field, but I can say this project is very important for me.
+								</p>
+							</div>
+						</div>
+						<div class="project-card project-hidden" onclick="window.open('https://youtu.be/0cRyfJ3dPHk')">
+							<div class="project-icon">
+								<img src="project-icons/meteo.png">
+							</div>
+							<div class="project-description">
+								<h1>Météo du jeudi 13 juillet 2084</h1>
+								<p>
+									In France, when I was in high school, I had a cinema class. This is the first project I made with a friend for this class.
+									We were really proud of this. I mean, for the first time I made something really neat in 3 or 4 days. It is in French though, sorry
+									for that ahah.
+								</p>
+							</div>
+						</div>
+						<div class="project-card project-hidden" onclick="window.open('https://youtu.be/BAe_RYgYytI')">
+							<div class="project-icon">
+								<img src="project-icons/sporenmosh.png">
+							</div>
+							<div class="project-description">
+								<h1>Spauranmosch 1a</h1>
+								<p>
+									In spring 2017, we made another movie for our cinema class. This one is quite particular because we made it in about 3 hours.
+									We are really glad that this little video looks like a real documentary. I mean, obviously it is kind of amateur, but
+									we like the fact that it looks serious.
+								</p>
+							</div>
+						</div>
+						<div class="project-card project-hidden" onclick="window.open('https://youtu.be/3PvH4wnoys4')">
+							<div class="project-icon">
+								<img src="project-icons/acdt.png">
+							</div>
+							<div class="project-description">
+								<h1>Aux couleurs du tissu</h1>
+								<p>
+									Again for the cinema class, for my last year, I had to make, with two of my friends, a movie. It was meant to be the last thing
+									we do, so we wanted to do something big. Moreover, few months later, I went to the Canada, so yeah, we wanted to create something
+									big, finally. We decided to make an animated movie. We worked for an entire year on our spare time and here is the result. Well, it obviously
+									has problems, but we are really proud of it.<br />
+									I personally loved working with my friends, with a team. It was so rewarding to work together, to see kind of a synergy. I do not think
+									we were that efficient, but in the end, both the travel and the product are unforgettable.
+								</p>
+							</div>
+						</div>
+						<div class="project-card project-hidden" onclick="window.open('https://youtube.com/playlist?list=PLeoNauD7FASOQDUfKJinErjrR5-2mIffm')">
+							<div class="project-icon">
+								<img src="project-icons/wopp.jpg">
+							</div>
+							<div class="project-description">
+								<h1>Shorts</h1>
+								<p>
+									In 2015, we were already into making films. Playing with friends and making fun things together is cool, isn't it? So we made 4 live shorts,
+									all 4 in the same universe. The acting is awful and the story itself is quite weird, but here is the thing: we had fun making this! I
+									can not be not proud of this, even if it is an awkward thing to watch ahah.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="project-column">
+						<div class="project-column-title project-hidden">
+							<h1>Video games</h1>
+						</div>
+						<div class="project-card project-hidden">
+							<div class="project-icon">
+								<img src="project-icons/charlie.png">
+							</div>
+							<div class="project-description">
+								<h1>SunLife</h1>
+								<p>
+									SunLife is my first webcomic. I started this project back in January 2020.
+									I really love creating stories that can inspire people, making them feel something.
+									I still have a lot to learn in that field, but I can say this project is very important for me.
+								</p>
+							</div>
+						</div>
+						<div class="project-card project-hidden">
+							<div class="project-icon">
+								<img src="project-icons/charlie.png">
+							</div>
+							<div class="project-description">
+								<h1>SunLife</h1>
+								<p>
+									SunLife is my first webcomic. I started this project back in January 2020.
+									I really love creating stories that can inspire people, making them feel something.
+									I still have a lot to learn in that field, but I can say this project is very important for me.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="project-column">
+						<div class="project-column-title project-hidden">
+							<h1>School and job projects</h1>
+						</div>
+						<div class="project-card project-hidden">
+							<div class="project-icon">
+								<img src="project-icons/charlie.png">
+							</div>
+							<div class="project-description">
+								<h1>SunLife</h1>
+								<p>
+									SunLife is my first webcomic. I started this project back in January 2020.
+									I really love creating stories that can inspire people, making them feel something.
+									I still have a lot to learn in that field, but I can say this project is very important for me.
+								</p>
+							</div>
+						</div>
+						<div class="project-card project-hidden">
+							<div class="project-icon">
+								<img src="project-icons/charlie.png">
+							</div>
+							<div class="project-description">
+								<h1>SunLife</h1>
+								<p>
+									SunLife is my first webcomic. I started this project back in January 2020.
+									I really love creating stories that can inspire people, making them feel something.
+									I still have a lot to learn in that field, but I can say this project is very important for me.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="project-navigation" class="navigation project-hidden">
+					<div class="nav-button">
+						<div class="nav-arrow">
+							►
+						</div>
+						<div class="nav-text" id="project-about-button">
+							About me
+						</div>
+					</div>
+					<div class="nav-button">
+						<div class="nav-arrow">
+							►
+						</div>
+						<div class="nav-text" id="project-skills-button">
+							My skills
+						</div>
+					</div>
+					<div class="nav-button">
+						<div class="nav-arrow">
+							►
+						</div>
+						<div class="nav-text" id="project-contact-button">
+							Contact me
+						</div>
+					</div>
+				</div>
+			</div>
 			<div id="space-wave" class="wave wave-step1">
 
 				<div id="code-box" class="code-box-hidden">
@@ -85,7 +278,7 @@
 							<div class="nav-arrow">
 								►
 							</div>
-							<div class="nav-text">
+							<div class="nav-text" id="skill-projects-button">
 								My projects
 							</div>
 						</div>
@@ -93,7 +286,7 @@
 							<div class="nav-arrow">
 								►
 							</div>
-							<div class="nav-text">
+							<div class="nav-text" id="skill-contact-button">
 								Contact me
 							</div>
 						</div>
@@ -146,7 +339,7 @@
 							<div class="nav-arrow">
 								►
 							</div>
-							<div class="nav-text">
+							<div class="nav-text" id="about-projects-button">
 								My projects
 							</div>
 						</div>
@@ -154,7 +347,7 @@
 							<div class="nav-arrow">
 								►
 							</div>
-							<div class="nav-text">
+							<div class="nav-text" id="about-contact-button">
 								Contact me
 							</div>
 						</div>

@@ -45,8 +45,6 @@ function showAbout() {
 
 function showSkills() {
 
-    document.getElementById("code-box").className = "code-box-hidden";
-    document.getElementById("code-container").className = "code-container-hidden";
     document.getElementById("space-wave").style.display = "";
     setTimeout(() => {
         document.getElementById("code-container").className = "code-container-showed";
@@ -66,15 +64,136 @@ function showSkills() {
 
 }
 
+function showContact() {
+
+    document.getElementById("space-wave").style.display = "";
+    setTimeout(() => {
+        document.getElementById("main-wave").className = "wave wave-step1";
+    }, 0);
+    setTimeout(() => {
+        document.getElementById("space-wave").className = "wave wave-step1";
+    }, 100);
+    setTimeout(() => {
+        document.getElementById("sec-wave").className = "wave wave-step1";
+    }, 200);
+    setTimeout(() => {
+        document.getElementById("presentation").className = "presentation-hidden";
+    }, 1200);
+
+}
+
 function showAboutFromSkill() {
     document.getElementById("presentation").className = "presentation-hidden";
     showAbout();
+    setTimeout(() => {
+        resetSkills();
+    }, 900);
+}
+
+function showProjects() {
+
+    document.getElementById("space-wave").style.display = "";
+
+    let projectCards = document.getElementsByClassName("project-hidden");
+
+    for(let i = 0 ; i < projectCards.length ; i++) {
+
+        const element = projectCards[i];
+
+        setTimeout(() => {
+
+            element.className = element.className.replace("hidden", "showed");
+
+        }, 600+i*100);
+
+    }
+
+
+    setTimeout(() => {
+        document.getElementById("main-wave").className = "wave wave-step1";
+    }, 100);
+    setTimeout(() => {
+        document.getElementById("space-wave").className = "wave wave-step1";
+    }, 200);
+    setTimeout(() => {
+        document.getElementById("sec-wave").className = "wave wave-step3";
+    }, 0);
+
+}
+
+function resetProjects() {
+    let projectCards = document.getElementsByClassName("project-showed");
+
+    for(let i = 0 ; i < projectCards.length ; i++) {
+
+        (<HTMLElement> projectCards[i]).className = (<HTMLElement> projectCards[i]).className.replace("showed", "hidden");
+        i--;
+
+    }
+}
+
+function resetSkills() {
+    document.getElementById("code-box").className = "code-box-hidden";
+    document.getElementById("code-container").className = "code-container-hidden";
+}
+
+function showAboutFromProject() {
+
+    showAboutFromSkill();
+    setTimeout(() => {
+        resetProjects();
+    }, 900);
+
+}
+
+function showSkillsFromProject() {
+
+    showSkills();
+    setTimeout(() => {
+        resetProjects();
+    }, 900);
+
+}
+
+function showProjectsFromSkill() {
+    showProjects();
+    setTimeout(() => {
+        resetSkills();
+    }, 900);
+}
+
+function showContactFromProject() {
+
+    showContact();
+    setTimeout(() => {
+        resetProjects();
+    }, 900);
+
+}
+
+function showContactFromSkill() {
+    showContact();
+    setTimeout(() => {
+        resetSkills();
+    }, 900);
 }
 
 document.getElementById("main-about-button").addEventListener("click", showAbout);
 document.getElementById("skill-about-button").addEventListener("click", showAboutFromSkill);
+document.getElementById("project-about-button").addEventListener("click", showAboutFromProject);
+
 document.getElementById("main-skills-button").addEventListener("click", showSkills);
 document.getElementById("about-skills-button").addEventListener("click", showSkills);
+document.getElementById("project-skills-button").addEventListener("click", showSkillsFromProject);
+
+document.getElementById("main-projects-button").addEventListener("click", showProjects);
+document.getElementById("about-projects-button").addEventListener("click", showProjects);
+document.getElementById("skill-projects-button").addEventListener("click", showProjectsFromSkill);
+
+document.getElementById("main-contact-button").addEventListener("click", showContact);
+document.getElementById("about-contact-button").addEventListener("click", showContact);
+document.getElementById("skill-contact-button").addEventListener("click", showContactFromSkill);
+document.getElementById("project-contact-button").addEventListener("click", showContactFromProject);
 
 let codeArea = new CodeArea(<HTMLTextAreaElement> document.getElementById("code-area"));
 
@@ -123,6 +242,7 @@ window.onload = () => {
     setTimeout(() => {
 
         document.getElementById("main-navigation").style.opacity = "100%";
+        document.getElementById("contact-container").className = "";
 
     }, 500)
 
