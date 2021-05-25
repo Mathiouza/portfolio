@@ -96,8 +96,8 @@ body {
 
     top: 50%;
     left: calc(50% + 50vw);
-    width: 30vw;
-    height: 30vw;
+    width: 500px;
+    height: 500px;
     transform: translate(-50%, -50%);
 
 }
@@ -115,24 +115,25 @@ body {
 
     position:absolute;
     top: 50%;
-    left: 50%;
+    left: calc(50% - 25vh);
     transition: 0.5s ease-in-out;
     
 }
 
 .presentation-hidden {
-    transform: translate(-50%, 50%);
+    transform: translate(0, 50%);
     opacity: 0;
 }
 
 .presentation-showed {
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
     opacity: 100%;
 }
 
 #about {
 
     width:40vw;
+    min-width:530px;
     position:absolute;
     top: 50%;
     left: 50%;
@@ -235,7 +236,7 @@ body {
 }
 
 #project-navigation {
-    width: 40vw;
+    width: 700px;
     position: absolute;
     display:flex;
     flex-direction: row;
