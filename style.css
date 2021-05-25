@@ -35,7 +35,7 @@ body {
 .wave {
 
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     border-radius: 99999px;
     transition: 1s ease-in-out;
 
@@ -69,7 +69,12 @@ body {
 }
 
 #photo-space-wave {
+    position: absolute;
     background: var(--ter-color);
+}
+
+#photo-main-wave {
+    position: absolute;
 }
 
 #photo-main-wave > img {
@@ -771,4 +776,280 @@ a:visited {
 
 a:hover {
     color: var(--sec-color);
+}
+
+@media screen and (max-width: 1000px) and (orientation: portrait), screen and (min-width: 1000px) and (max-width: 1100px) and (orientation: landscape) {
+    
+    .wave-step1 {
+
+        top: 25vh;
+        left: 50vw;
+        width: 0vh;
+        height: 0vh;
+    
+    }
+    
+    .wave-step2 {
+    
+        top: calc(25vh - 50vh);
+        left: calc(50vw - 50vh);
+        width: 100vh;
+        height: 100vh;
+    
+    }
+    
+    .wave-step3 {
+    
+        top: calc(25vh - 100vh);
+        left: calc(50vw - 100vh);
+        width: 200vh;
+        height: 200vh;
+    
+    }
+
+    #presentation {
+
+        top: 50%;
+        left: 50%;
+        
+    }
+
+    .button {
+        font-size: 4vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    .section {
+        font-size: 3vw;
+    }
+
+    #presentation > #text {
+
+        font-size: 4vw;
+        
+    }
+
+    .project-category {
+        font-size: 3.5vw;
+    }
+
+    #about-navigation .nav-text {
+
+        font-size: 3.5vw;
+        
+    }
+
+    #skill-navigation .nav-text {
+
+        font-size: 3.5vw;
+        
+    }
+
+    #project-card-container p {
+        font-size: 3.5vw;
+    }
+
+    .presentation-hidden {
+        transform: translate(-50%, 50%);
+    }
+    
+    .presentation-showed {
+        transform: translate(-50%, -50%);
+    }
+
+    .navigation {
+
+        left:50%;
+        height: fit-content;
+        width: 80vw;
+        top:90%;
+        transform: translate(-50%, -50%);
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    
+    }
+
+    .navigation .nav-text {
+        font-size: 4vw;
+    }
+
+    .navigation .nav-arrow {
+        display: none;
+    }
+
+    #contact-container {
+
+        position:fixed;
+        top:25vh;
+        left:50vw;
+        transform: translate(-50%, -50%);
+        color:var(--main-color);
+        font-size: x-large;
+    
+    }
+
+    .photo-wave-step1 {
+
+        top: calc(50% + 50vh);
+        left: 50%;
+        width: 0vw;
+        height: 0vw;
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    .photo-wave-step2 {
+    
+        top: calc(50% + 50vh);
+        left: 50%;
+        width: 50vw;
+        height: 50vw;
+        transform: translate(-50%, -50%);
+    
+    }
+
+    #about {
+
+        width:80vw;
+        top: calc(50% - 25vh);
+        left: 50%;
+        
+    }
+    
+    .about-hidden {
+        transform: translate(-50%, -100%);
+        opacity: 0;
+    }
+    
+    .about-showed {
+        transform: translate(-50%, 0);
+        opacity: 100%;
+    }
+
+    #photo-main-wave > img {
+
+        transform:translate(-48%, -47%) scale(10vw);
+    
+    }
+
+    #code-box {
+
+        height: 40vh;
+        width: 80vw;
+        top:50%;
+        left:50%;
+    
+    }
+
+    #code-container {
+
+        height: 40vh;
+        width: 80vw;
+        top:calc(50% + 50vh);
+        left:50%;
+    
+    }
+
+    #project-container {
+
+        top:calc(50% + 25vh);
+        left:50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+        height: 70vh;
+    
+    }
+
+    #project-navigation {
+        width: 90vw;
+        left: 50%;
+        top:calc(50% + 62vh);
+        transform: translate(-50%, 0);
+    }
+
+    #project-title {
+
+        top:calc(50% - 12vh);
+        left:50%;
+        transform: translate(-50%, -100%);
+        color: var(--ter-color);
+    
+    }
+
+    #contact-email, #more-links, #contact-button {
+
+        font-size: 4vw;
+
+    }
+
+    #contact-icons {
+        width: 320px;
+        font-size:80px;
+    }
+
+    .fa {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+    
+    .photo-wave-step1 {
+
+        top: 50%;
+        left: calc(50% + 60vw);
+        width: 0vw;
+        height: 0vw;
+        transform: translate(-50%, -50%);
+    
+    }
+    
+    .photo-wave-step2 {
+    
+        top: 50%;
+        left: calc(50% + 60vw);
+        width: 50vh;
+        height: 50vh;
+        transform: translate(-50%, -50%);
+    
+    }
+
+    #photo-main-wave > img {
+
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-46%, -48%) scale(.5);
+    
+    
+    }
+
+    .navigation .nav-arrow {
+        display: none;
+    }
+
+    #contact-container {
+
+        top:50vh;
+        left:24vw;
+    
+    }
+
+    #text {
+        font-size: 4vh;
+    }
+
+    #skill-navigation .nav-text {
+
+        font-size: 2.8vh;
+
+    }
+
 }
