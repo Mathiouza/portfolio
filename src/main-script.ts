@@ -231,6 +231,29 @@ resetButton.addEventListener("click", () => {
     codeArea.reset();
 })
 
+
+let projectTabs = document.getElementsByClassName("project-category");
+let projectContents = document.getElementsByClassName("project-content");
+
+for(let i = 0 ; i < projectTabs.length ; i++) {
+
+    const index = i;
+
+    projectTabs[i].addEventListener("click", () => {
+
+        for(let j = 0 ; j < projectTabs.length ; j++) {
+            projectTabs[j].className = "project-category";
+            projectContents[j].className = "project-content";
+        }
+
+        projectTabs[index].className += " project-category-selected";
+        projectContents[index].className += " project-content-selected";
+
+    });
+
+}
+
+
 window.onload = () => {
 
     setTimeout(() => {

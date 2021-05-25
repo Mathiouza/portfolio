@@ -77,139 +77,129 @@
 				<div id="project-title" class="project-hidden">
 					<h1>My projects</h1>
 				</div>
-				<div id="project-container">
-					<div class="project-column">
-						<div class="project-column-title project-hidden">
-							<h1>Films and books</h1>
+				<div id="project-container" class="project-hidden">
+					<div id="project-categories">
+						<div class="project-category project-category-selected">
+							Job and school
 						</div>
-						<div class="project-card project-hidden" onclick="window.open('https://sunlifecomic.com')">
-							<div class="project-icon">
+						<div class="project-category">
+							Video games
+						</div>
+						<div class="project-category">
+							Books and films
+						</div>
+					</div>
+					<div id="project-card-container">
+						<div class="project-content project-content-selected">
+							<div class="project-card" title="No website yet">
+								<img src="project-icons/freeem.png">
+								<div class="project-description">
+									<h1>Freeem</h1>
+									<p>
+										Freeem is a startup focused on gaining time. The project we are developing right now is an application to digitalize waiting lines.
+										We are a team of 3 students and are currently hard working on it. Do not hesitate to contact me if you may be interested in virtualizing your
+										waiting lines.
+									</p>
+								</div>
+							</div>
+							<div class="project-card" title="No preview available">
+								<img src="project-icons/suiveurLigne.png">
+								<div class="project-description">
+									<h1>School project I</h1>
+									<p>
+										In 2020, during the second trimester of my studies, I had to create, with 3 other students, a robot that must follow a line.
+										We started to understand how to code the integrated boards, how to control the wheels and the motion or how
+										to communicate between the different parts of the robot.<br/>
+										Unfortunately, COVID-19 made it impossible to finish the robot. Instead we had to work on a simulation. But beyond that,
+										we had the opportunity to play with the robot and discover it.
+									</p>
+								</div>
+							</div>
+							<div class="project-card selectable-card" onclick="window.open('https://sunlifecomic.com')" title="Click to see the project">
+								<img src="project-icons/app-logo.png" style="filter: invert(100%)">
+								<div class="project-description">
+									<h1>School project II</h1>
+									<p>
+										In 2021, we had to make a drawing application. We learned to use Angular, Express and MongoDB. And moreover, we learned to work in a team.
+										That was some sort of a marathon, we had to be organized, aware of what everyone was doing and respect schedules. It was satisfying to work on
+										it and to do as most as we could to make the project as good as possible.<br/>
+										Obviously, we worked on other classes at the same time, so we did not have as much time as we wanted to make it somewhat perfect, so there are
+										some bugs and UX and UI problems. But anyway, this was very interesting to do.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="project-content">
+							<div class="project-card selectable-card" onclick="window.open('https://kiup.itch.io/rrw')" title="Click to see the itch.io page">
+								<img src="project-icons/rrw.png">
+								<div class="project-description">
+									<h1>Rounded Rocky Walls</h1>
+									<p>
+										This is the first big ambitious game I made. I made it from scratch: I created my game engine based on LWJGL (in Java) and used it
+										to create the game. I did not make the musics though. I made it in 2016. I really like the game and the concept. I swear I will remake it
+										someday. Make it even more juicy and "arcade", get compositors and all to make the best thing possible. Just for the sake of it!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="project-content">
+							<div class="project-card selectable-card" onclick="window.open('https://sunlifecomic.com')" title="Click to see the website">
 								<img src="project-icons/charlie.png">
+								<div class="project-description">
+									<h1>SunLife, the webcomic</h1>
+									<p>
+										SunLife is my first webcomic. I started this project back in January 2020.
+										I really love creating stories that can inspire people, making them feel something.
+										I still have a lot to learn in that field, but I can say this project is very important for me.
+									</p>
+								</div>
 							</div>
-							<div class="project-description">
-								<h1>SunLife, the webcomic</h1>
-								<p>
-									SunLife is my first webcomic. I started this project back in January 2020.
-									I really love creating stories that can inspire people, making them feel something.
-									I still have a lot to learn in that field, but I can say this project is very important for me.
-								</p>
-							</div>
-						</div>
-						<div class="project-card project-hidden" onclick="window.open('https://youtu.be/0cRyfJ3dPHk')">
-							<div class="project-icon">
+							<div class="project-card selectable-card" onclick="window.open('https://youtu.be/0cRyfJ3dPHk')" title="Click to see the video">
 								<img src="project-icons/meteo.png">
+								<div class="project-description">
+									<h1>Météo du jeudi 13 juillet 2084</h1>
+									<p>
+										In France, when I was in high school, I had a cinema class. This is the first project I made with a friend for this class.
+										We were really proud of this. I mean, for the first time I made something really neat in 3 or 4 days. It is in French though, sorry
+										for that ahah.
+									</p>
+								</div>
 							</div>
-							<div class="project-description">
-								<h1>Météo du jeudi 13 juillet 2084</h1>
-								<p>
-									In France, when I was in high school, I had a cinema class. This is the first project I made with a friend for this class.
-									We were really proud of this. I mean, for the first time I made something really neat in 3 or 4 days. It is in French though, sorry
-									for that ahah.
-								</p>
-							</div>
-						</div>
-						<div class="project-card project-hidden" onclick="window.open('https://youtu.be/BAe_RYgYytI')">
-							<div class="project-icon">
+							<div class="project-card selectable-card" onclick="window.open('https://youtu.be/BAe_RYgYytI')" title="Click to see the video">
 								<img src="project-icons/sporenmosh.png">
+								<div class="project-description">
+									<h1>Spauranmosch 1a</h1>
+									<p>
+										In spring 2017, we made another movie for our cinema class. This one is quite particular because we made it in about 3 hours.
+										We are really glad that this little video looks like a real documentary. I mean, obviously it is kind of amateur, but
+										we like the fact that it looks serious.
+									</p>
+								</div>
 							</div>
-							<div class="project-description">
-								<h1>Spauranmosch 1a</h1>
-								<p>
-									In spring 2017, we made another movie for our cinema class. This one is quite particular because we made it in about 3 hours.
-									We are really glad that this little video looks like a real documentary. I mean, obviously it is kind of amateur, but
-									we like the fact that it looks serious.
-								</p>
-							</div>
-						</div>
-						<div class="project-card project-hidden" onclick="window.open('https://youtu.be/3PvH4wnoys4')">
-							<div class="project-icon">
+							<div class="project-card selectable-card" onclick="window.open('https://youtu.be/3PvH4wnoys4')" title="Click to see the video">
 								<img src="project-icons/acdt.png">
+								<div class="project-description">
+									<h1>Aux couleurs du tissu</h1>
+									<p>
+										Again for the cinema class, for my last year, I had to make, with two of my friends, a movie. It was meant to be the last thing
+										we do, so we wanted to do something big. Moreover, few months later, I went to the Canada, so yeah, we wanted to create something
+										big, finally. We decided to make an animated movie. We worked for an entire year on our spare time and here is the result. Well, it obviously
+										has problems, but we are really proud of it.<br />
+										I personally loved working with my friends, with a team. It was so rewarding to work together, to see kind of a synergy. I do not think
+										we were that efficient, but in the end, both the travel and the product are unforgettable.
+									</p>
+								</div>
 							</div>
-							<div class="project-description">
-								<h1>Aux couleurs du tissu</h1>
-								<p>
-									Again for the cinema class, for my last year, I had to make, with two of my friends, a movie. It was meant to be the last thing
-									we do, so we wanted to do something big. Moreover, few months later, I went to the Canada, so yeah, we wanted to create something
-									big, finally. We decided to make an animated movie. We worked for an entire year on our spare time and here is the result. Well, it obviously
-									has problems, but we are really proud of it.<br />
-									I personally loved working with my friends, with a team. It was so rewarding to work together, to see kind of a synergy. I do not think
-									we were that efficient, but in the end, both the travel and the product are unforgettable.
-								</p>
-							</div>
-						</div>
-						<div class="project-card project-hidden" onclick="window.open('https://youtube.com/playlist?list=PLeoNauD7FASOQDUfKJinErjrR5-2mIffm')">
-							<div class="project-icon">
+							<div class="project-card selectable-card" onclick="window.open('https://youtube.com/playlist?list=PLeoNauD7FASOQDUfKJinErjrR5-2mIffm')" title="Click to see the playlist">
 								<img src="project-icons/wopp.jpg">
-							</div>
-							<div class="project-description">
-								<h1>Shorts</h1>
-								<p>
-									In 2015, we were already into making films. Playing with friends and making fun things together is cool, isn't it? So we made 4 live shorts,
-									all 4 in the same universe. The acting is awful and the story itself is quite weird, but here is the thing: we had fun making this! I
-									can not be not proud of this, even if it is an awkward thing to watch ahah.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="project-column">
-						<div class="project-column-title project-hidden">
-							<h1>Video games</h1>
-						</div>
-						<div class="project-card project-hidden">
-							<div class="project-icon">
-								<img src="project-icons/charlie.png">
-							</div>
-							<div class="project-description">
-								<h1>SunLife</h1>
-								<p>
-									SunLife is my first webcomic. I started this project back in January 2020.
-									I really love creating stories that can inspire people, making them feel something.
-									I still have a lot to learn in that field, but I can say this project is very important for me.
-								</p>
-							</div>
-						</div>
-						<div class="project-card project-hidden">
-							<div class="project-icon">
-								<img src="project-icons/charlie.png">
-							</div>
-							<div class="project-description">
-								<h1>SunLife</h1>
-								<p>
-									SunLife is my first webcomic. I started this project back in January 2020.
-									I really love creating stories that can inspire people, making them feel something.
-									I still have a lot to learn in that field, but I can say this project is very important for me.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="project-column">
-						<div class="project-column-title project-hidden">
-							<h1>School and job projects</h1>
-						</div>
-						<div class="project-card project-hidden">
-							<div class="project-icon">
-								<img src="project-icons/charlie.png">
-							</div>
-							<div class="project-description">
-								<h1>SunLife</h1>
-								<p>
-									SunLife is my first webcomic. I started this project back in January 2020.
-									I really love creating stories that can inspire people, making them feel something.
-									I still have a lot to learn in that field, but I can say this project is very important for me.
-								</p>
-							</div>
-						</div>
-						<div class="project-card project-hidden">
-							<div class="project-icon">
-								<img src="project-icons/charlie.png">
-							</div>
-							<div class="project-description">
-								<h1>SunLife</h1>
-								<p>
-									SunLife is my first webcomic. I started this project back in January 2020.
-									I really love creating stories that can inspire people, making them feel something.
-									I still have a lot to learn in that field, but I can say this project is very important for me.
-								</p>
+								<div class="project-description">
+									<h1>Shorts</h1>
+									<p>
+										In 2015, we were already into making films. Playing with friends and making fun things together is cool, isn't it? So we made 4 live shorts,
+										all 4 in the same universe. The acting is awful and the story itself is quite weird, but here is the thing: we had fun making this! I
+										can not be not proud of this, even if it is an awkward thing to watch ahah.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -409,6 +399,89 @@
 
 				</div>
 			</div>
+
+
+			<div class="project-column">
+						<div class="project-column-title project-hidden">
+							<h1>Films and books</h1>
+						</div>
+						<div class="project-card project-hidden" onclick="window.open('https://sunlifecomic.com')">
+							<div class="project-icon">
+								<img src="project-icons/charlie.png">
+							</div>
+							<div class="project-description">
+								<h1>SunLife, the webcomic</h1>
+								<p>
+									SunLife is my first webcomic. I started this project back in January 2020.
+									I really love creating stories that can inspire people, making them feel something.
+									I still have a lot to learn in that field, but I can say this project is very important for me.
+								</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="project-column">
+						<div class="project-column-title project-hidden">
+							<h1>Video games</h1>
+						</div>
+						<div class="project-card project-hidden">
+							<div class="project-icon">
+								<img src="project-icons/charlie.png">
+							</div>
+							<div class="project-description">
+								<h1>SunLife</h1>
+								<p>
+									SunLife is my first webcomic. I started this project back in January 2020.
+									I really love creating stories that can inspire people, making them feel something.
+									I still have a lot to learn in that field, but I can say this project is very important for me.
+								</p>
+							</div>
+						</div>
+						<div class="project-card project-hidden">
+							<div class="project-icon">
+								<img src="project-icons/charlie.png">
+							</div>
+							<div class="project-description">
+								<h1>SunLife</h1>
+								<p>
+									SunLife is my first webcomic. I started this project back in January 2020.
+									I really love creating stories that can inspire people, making them feel something.
+									I still have a lot to learn in that field, but I can say this project is very important for me.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="project-column">
+						<div class="project-column-title project-hidden">
+							<h1>School and job projects</h1>
+						</div>
+						<div class="project-card project-hidden">
+							<div class="project-icon">
+								<img src="project-icons/charlie.png">
+							</div>
+							<div class="project-description">
+								<h1>SunLife</h1>
+								<p>
+									SunLife is my first webcomic. I started this project back in January 2020.
+									I really love creating stories that can inspire people, making them feel something.
+									I still have a lot to learn in that field, but I can say this project is very important for me.
+								</p>
+							</div>
+						</div>
+						<div class="project-card project-hidden">
+							<div class="project-icon">
+								<img src="project-icons/charlie.png">
+							</div>
+							<div class="project-description">
+								<h1>SunLife</h1>
+								<p>
+									SunLife is my first webcomic. I started this project back in January 2020.
+									I really love creating stories that can inspire people, making them feel something.
+									I still have a lot to learn in that field, but I can say this project is very important for me.
+								</p>
+							</div>
+						</div>
+					</div>
 		</div-->
 
 		
