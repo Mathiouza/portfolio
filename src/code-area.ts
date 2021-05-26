@@ -46,6 +46,15 @@ export class CodeArea {
     flex: 1 1 auto;
     margin-bottom: 10px;
     margin-right: 10px;
+}
+
+@media screen and (max-width:1200px) {
+
+    .skill {
+        padding: 0px 0px;
+        font-size: x-large;
+    }
+
 }`;
     baseJS:string =
 `class Skill {
