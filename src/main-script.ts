@@ -231,6 +231,26 @@ resetButton.addEventListener("click", () => {
     codeArea.reset();
 })
 
+function downloadCV() {
+
+    let element = document.createElement("a");
+    element.href = "../CV_Mathieu_CASUBOLO.pdf";
+    element.download = "CV_Mathieu_CASUBOLO.pdf";
+    element.click();
+
+}
+
+document.getElementById("contact-button").addEventListener("click", () => {
+
+    downloadCV();
+
+});
+
+document.getElementById("resume-button").addEventListener("click", () => {
+
+    downloadCV();
+
+})
 
 let projectTabs = document.getElementsByClassName("project-category");
 let projectContents = document.getElementsByClassName("project-content");
