@@ -379,8 +379,8 @@ body {
 
 strong {
 
-    color: var(--sec-color);
     font-weight: bold;
+    text-decoration: underline;
 
 }
 
