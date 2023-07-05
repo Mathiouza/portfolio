@@ -74,27 +74,29 @@ let skills = [
     new Skill("HTML", 0.98),
     new Skill("CSS", 0.98),
     new Skill("Python", 0.7),
-    new Skill("Lua", 0.6),
     new Skill("Drawing", 0.65),
     new Skill("3D Modelling", 0.6),
     new Skill("Story writing", 0.55),
     new Skill("Music composition", 0.5),
     new Skill("PHP", 0.6),
     new Skill("SQL", 0.7),
-    new Skill("IA", 0.6),
     new Skill("Office Suite", 0.98),
-    new Skill("Adobe Suite", 0.97)
+    new Skill("Docker", 0.6),
+    new Skill("Unity", 0.7),
+    new Skill("Godot", 0.75)
 ];
 
 skills.sort((a, b) => {
     
-    if(a.point < b.point)
+    if(a.point < b.point) {
         return 1;
+    }
     else if(a.point === b.point) {
         return a.name.localeCompare(b.name);
     }
-    else
+    else {
         return -1;
+    }
     
 });
 
